@@ -1,0 +1,67 @@
+<%- include ("partials/header") %>
+
+
+<hr style="margin: 40px 0;">
+<div style="font-size: x-large; margin-left: 400px;">Main Details About "<%= movie["Title"] %>"</div>
+<hr style="margin: 40px 0;">
+
+  <img alt=<%= movie["Title"] %> src= <%= movie["Poster"] %> >
+  <h2> <%= movie["Title"] %> </h2>
+	<p class="date"> Year: <em> <%= movie["Year"] %> </em> , Released: <em> <%= movie["Released"] %> </em> </p>
+</div>
+
+
+<div>
+
+  <hr style="margin: 30px 0;">
+
+
+	<div class="review-element">
+    <h3 class="review-title">Genre: </h3> <div class="review-result"><%= movie["Genre"] %></div>
+  </div>
+
+  <div class="review-element">
+   <h3 class="review-title"> Runtime: </h3> <%= movie["Runtime"] %></div> 
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Director: </h3> <div class="review-result"><%= movie["Director"] %></div>
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Writers: </h3> <div class="review-result"><%= movie["Writer"] %></div>
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Actors: </h3> <div class="review-result"><%= movie["Actors"] %></div>
+  </div>
+
+
+  <div class="review-element">
+    <h3 class="review-title">Awards:</h3><%= movie["Awards"] %></div>
+  </div>
+
+	<div class="review-element">
+    <h3 class="review-title">Production:</h3><%= movie["Production"] %> </div>
+  </div>
+
+	<div class="review-element">
+    <h3 class="review-title">Website:</h3><a href=<%= movie["Website"] %> target="blank"> <%= movie["Website"] %> </a></div>
+  </div>
+	
+		
+</div>
+
+<div>
+
+  <hr style="margin: 30px 0;">
+
+  <div id="reviews"><a href="/movie?title=<%= movie["Title"]%>">
+		<h1 style="font-size: medium; margin-bottom: 40px;">Check if any review about "<%= movie["Title"] %>" has been published in New York Times</h1>
+  </div>
+
+		
+
+
+
+<%- include ("partials/footer") %>

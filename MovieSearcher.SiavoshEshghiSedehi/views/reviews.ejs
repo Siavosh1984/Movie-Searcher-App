@@ -1,0 +1,46 @@
+<%- include ("partials/header") %>
+
+<hr style="margin: 40px 0;">
+<div style="font-size: x-large; margin-left: 200px;">All New York Times' Published Reviews With The Title Searched</div>
+<hr style="margin: 40px 0;">
+
+<div class="review">
+  <div class="review-element">
+   <% review["results"].forEach(function(data){ %>
+  </div>
+
+  
+
+  <div class="review-element">
+    <h3 class="review-title">Movie Title: </h3> <div class="review-result"><%= data["display_title"] %></div>
+  </div>
+
+  <div class="review-element">
+   <h3 class="review-title"> Reviewer: </h3> <div class="review-result"><%= data["byline"] %></div> 
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Headline: </h3> <div class="review-result"><%= data["headline"] %></div>
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Summary: </h3> <div class="review-result"><%= data["summary_short"] %></div>
+  </div>
+
+  <div class="review-element">
+    <h3 class="review-title">Publication Date: </h3> <div class="review-result"><%= data["publication_date"] %></div>
+  </div>
+
+
+  <div class="review-element">
+    <h3 class="review-title">Link: </h3><a href="<%= data["link"].url %>"> <div class="review-result"><%= data["link"].suggested_link_text %></a></div>
+  </div>
+  
+  <hr style="margin: 40px 0;">
+
+  <% }); %>
+
+
+</div>
+
+<%- include ("partials/footer") %>

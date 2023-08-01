@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&display=swap');
+
+
+html{
+	height: 100%;
+}
+
+body{
+	
+	font-family: "Bungee Spice";
+	height: 100%;
+	background-color: black;
+	margin-top: 0;
+	margin-left: 0;
+	
+
+}
+
+/* source of background image: https://wildtextures.com */
+
+
+.background{
+
+  background: url(https://wildtextures.com/wp-content/uploads/wildtextures-black-scratched-plate.jpg);
+	position:absolute;
+	background-size: cover;
+	background-position: center;
+	min-height: 3000px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-repeat: repeat-y;
+	opacity: 0.8;
+	z-index: -1;
+}
+
+#header-img{
+	height: 200px;
+	width: 100%;
+}
+
+
+
+/*searchbar css*/
+
+.search-bar{
+
+	
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 170px;
+}
+
+form input {
+	background-color: rgb(182, 168, 168);
+	width: 300px;
+	height: 30px;
+}
+
+/*changing placeholder font size*/
+
+form input::-webkit-input-placeholder {
+	color: gray;
+	font-size:larger;
+}
+form button{
+	background-color: rgb(182, 168, 168);
+	height: 37px;
+
+}
+
+form button:hover{
+	background-color: #b6b6b6;
+}
+
+
+/*resultList css*/
+
+.title{
+
+	font-size: xx-large;
+	margin-left: 380px;
+	
+}
+
+.movieList{
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 1300px;
+	margin-left: 20px;
+
+
+}
+
+.eachmovieList{
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+}
+
+
+/*reviews css*/
+
+
+
+.review-element{
+
+margin-left: 100px;
+font-family: "Bebas Neue";
+color: rgb(170, 184, 16);
+display: flex;
+align-items: center;
+
+	
+}
+
+.review-title{
+	width: 300px;
+}
+
+.review-result{
+
+	font-size: large;
+
+	
+}
+/*footer css*/
+
+.copy{
+	margin-top: 100px;
+	padding: 40px;
+	
+	font-size: x-small;
+	
+}

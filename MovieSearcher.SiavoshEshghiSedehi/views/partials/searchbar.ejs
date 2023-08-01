@@ -1,0 +1,24 @@
+<%- include ("header") %>
+
+<header>
+
+<!--image source: https://stock.adobe.com -->
+  <img id= "header-img" src="https://as2.ftcdn.net/v2/jpg/00/97/46/99/1000_F_97469997_cCBTDOhgDEYskQUdoi4W7hWUoeeM7BwZ.jpg">
+  <div class="search-bar">
+  <h1> Please Enter Name of Movie</h1>
+
+  <form class= form action="/resultsList" method ="GET">
+
+    <input class= "input" type="text" placeholder="Movie Title" name="title" autocomplete="off" required>
+
+    <!-- for adding Search Icon I need <i>-->
+    <button class="button" type="submit"  ><i class="icon fa fa-search" ></i></button>
+
+  </form>
+  </div>
+</header>
+
+
+
+
+

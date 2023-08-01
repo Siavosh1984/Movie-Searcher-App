@@ -1,0 +1,31 @@
+<%- include ("partials/header") %>
+<%- include ("partials/searchbar") %>
+
+
+
+<div class="container">
+
+  <hr>
+  <div class="title">Results List for <%= search %></div>
+  <hr>
+
+  <div class="movieList"> 
+    <% list["Search"].forEach(function(movie){ %>
+    <div class="eachmovieList">
+    <div class="movie"><a href="/movie/<%= movie["imdbID"] %>"> 
+      <div class="poster">
+        <img alt=<%=movie["Title"]%> src=<%= movie["Poster"] %> >
+      </div>
+
+      <h2><%= movie["Title"] %> - <%= movie["Year"] %> </h2>
+
+    </a></div>
+    </div>
+    
+    <% }); %>
+  </div>
+
+</div>
+
+
+<%- include ("partials/footer") %>
